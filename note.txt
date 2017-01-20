@@ -1,38 +1,38 @@
-²¼¹ÈÄñ·şÎñÆ÷£º10.8.8.115
-ÓÃ»§Ãû£ºchendong
+Â²Â¼Â¹ÃˆÃ„Ã±Â·Ã¾ÃÃ±Ã†Ã·Â£Âº10.8.8.115
+Ã“ÃƒÂ»Â§ÃƒÃ»Â£Âºchendong
 
-³Â¶° 2016-09-26 12:19:13
+Â³Ã‚Â¶Â° 2016-09-26 12:19:13
 
-SVNÕËºÅÃÜÂë¶àÉÙ£¿
-ÁõÑå±ó 2016-09-26 12:18:18
+SVNÃ•Ã‹ÂºÃ…ÃƒÃœÃ‚Ã«Â¶Ã Ã‰Ã™Â£Â¿
+ÃÃµÃ‘Ã¥Â±Ã³ 2016-09-26 12:18:18
 
 chendong    162947
 
-ÓÊÏäÃÜÂë£º
-ÀÏÃÜÂëCg0815
-ĞÂÃÜÂëRh@jd9rp
+Ã“ÃŠÃÃ¤ÃƒÃœÃ‚Ã«Â£Âº
+Ã€ÃÃƒÃœÃ‚Ã«Cg0815
+ÃÃ‚ÃƒÃœÃ‚Ã«Rh@jd9rp
 
 
-ÅíÌÎ 2016-08-22 09:05:19
+Ã…Ã­ÃŒÃ 2016-08-22 09:05:19
 
-svn://10.8.8.179/zd/15_SmartPOS/P20²úÆ·/Trunk/Èí¼ş/Android/os/p20_20160525_patch.tgz
+svn://10.8.8.179/zd/15_SmartPOS/P20Â²ÃºÃ†Â·/Trunk/ÃˆÃ­Â¼Ã¾/Android/os/p20_20160525_patch.tgz
 
-ÅíÌÎ 2016-08-22 15:03:35
+Ã…Ã­ÃŒÃ 2016-08-22 15:03:35
 
 cd /pos/p20/mt8735_5.1;. build/envsetup.sh;lunch full_wisky8735m_6_h-userdebug
 
-ÅíÌÎ 2016-08-22 15:03:57
+Ã…Ã­ÃŒÃ 2016-08-22 15:03:57
 
 mk_mt8735.sh
 
 device/wisky/wisky8735m_6_h/ProjectConfig.mk
 
 
-samba·şÎñÖØÆô
+sambaÂ·Ã¾ÃÃ±Ã–Ã˜Ã†Ã´
 sudo /etc/init.d/samba restart
 
 
-Alt + 1/2/3/4/5.../9 -- ÇĞ»»µ½µÚ1/2/3/4/5.../9¸ö±êÇ© 
+Alt + 1/2/3/4/5.../9 -- Ã‡ÃÂ»Â»ÂµÂ½ÂµÃš1/2/3/4/5.../9Â¸Ã¶Â±ÃªÃ‡Â© 
 
 pm feature list
 
@@ -42,90 +42,114 @@ minicom -b 921600 -D /dev/ttyUSB0
 
 nm -D out/target/product/wisky8735m_6_h/system/lib/libPKCS11Wrapper.so
 
-ÖÕ¶ËÉèÖÃ£ºÉÌ»§Ãû000000000000000ÃÜÂë00000000
+Ã–Ã•Â¶Ã‹Ã‰Ã¨Ã–ÃƒÂ£ÂºÃ‰ÃŒÂ»Â§ÃƒÃ»000000000000000ÃƒÃœÃ‚Ã«00000000
 
-Õû°üÃüÁî£º
+Ã•Ã»Â°Ã¼ÃƒÃ¼ÃÃ®Â£Âº
 make otapackage
 
-²î·Ö°üÃüÁî£º
+Â²Ã®Â·Ã–Â°Ã¼ÃƒÃ¼ÃÃ®Â£Âº
 ./build/tools/releasetools/ota_from_target_files -i out/target/product/wisky8735m_6_h/obj/PACKAGING/target_files_intermediates/full_wisky8735m_6_h-target_files-1477970376.zip out/target/product/wisky8735m_6_h/obj/PACKAGING/target_files_intermediates/full_wisky8735m_6_h-target_files-1477998932.zip update.zip
 
-½«--update_package=/cache/update.zip¡±»òÔò¡°--update_package=/sdcard/update.zip¡±Ğ´Èë/cache/recovery/command£¬È»ºóÖØÆôadb reboot recovery
+Â½Â«--update_package=/cache/update.zipÂ¡Â±Â»Ã²Ã”Ã²Â¡Â°--update_package=/sdcard/update.zipÂ¡Â±ÃÂ´ÃˆÃ«/cache/recovery/commandÂ£Â¬ÃˆÂ»ÂºÃ³Ã–Ã˜Ã†Ã´adb reboot recovery
 
 
  make -C kernel-3.10 O=~/mt8735_5.1/out/target/product/wisky8735m_6_h/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=~/mt8735_5.1/prebuilts/gcc/linux-x86/aarch64/cit-aarch64-linux-android-4.9/bin/aarch64-linux-android- ROOTDIR=/pos/p20/mt8735_5.1
 
-sshµØÖ·
+sshÂµÃ˜Ã–Â·
 whty (\\10.8.40.159)
 
 
-tpÏÂµç£ºecho -wdout 96 0 > /sys/class/misc/mtgpio/pin
+tpÃÃ‚ÂµÃ§Â£Âºecho -wdout 96 0 > /sys/class/misc/mtgpio/pin
 
 
 md5sum update.zip > md5sum
 zip -Z store 1.02.zip md5sum update.zip
 
-MTK½ø¹¤³ÌÄ£Ê½*#*#6463633#*#*
+MTKÂ½Ã¸Â¹Â¤Â³ÃŒÃ„Â£ÃŠÂ½*#*#6463633#*#*
+
+vim show with HEX :%!xxd
+bin 		  :%!xxd -r 
+
+trustview 
+PDF File open password: 4778918969 moseswang@wisky.com.cn
+trustview tool
+password: wiskymtk_1
 
 
+Generate RSA-1024 Key Pair
+--openssl genrsa -out private.pem 1024
+Generate Public key and output as text
+--openssl rsa -text -in private.pem -pubout
 
+wget -c -t 0  https://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/aosp-latest.tar
+
+123456789004500 12345601
+
+
+898150148140001 00000002 A73AD926E7A82A90B43D17B365F5CB18
+898150148140001 00000009 EFE3F8CECD1516DFD
+6F8615185A26E51
+
+å•†æˆ·å·ï¼š301310070118940
+ç»ˆç«¯å·ï¼š37677022
+F229F45B6773205D86572C640DFD89D5
 
 
 .tar
-½â°ü£ºtar xvf FileName.tar
-´ò°ü£ºtar cvf FileName.tar DirName
-£¨×¢£ºtarÊÇ´ò°ü£¬²»ÊÇÑ¹Ëõ£¡£©
+Â½Ã¢Â°Ã¼Â£Âºtar xvf FileName.tar
+Â´Ã²Â°Ã¼Â£Âºtar cvf FileName.tar DirName
+Â£Â¨Ã—Â¢Â£ÂºtarÃŠÃ‡Â´Ã²Â°Ã¼Â£Â¬Â²Â»ÃŠÃ‡Ã‘Â¹Ã‹ÃµÂ£Â¡Â£Â©
 ---------------------------------------------
 .gz
-½âÑ¹1£ºgunzip FileName.gz
-½âÑ¹2£ºgzip -d FileName.gz
-Ñ¹Ëõ£ºgzip FileName 
+Â½Ã¢Ã‘Â¹1Â£Âºgunzip FileName.gz
+Â½Ã¢Ã‘Â¹2Â£Âºgzip -d FileName.gz
+Ã‘Â¹Ã‹ÃµÂ£Âºgzip FileName 
 .tar.gz
-½âÑ¹£ºtar zxvf FileName.tar.gz
-Ñ¹Ëõ£ºtar zcvf FileName.tar.gz DirName
+Â½Ã¢Ã‘Â¹Â£Âºtar zxvf FileName.tar.gz
+Ã‘Â¹Ã‹ÃµÂ£Âºtar zcvf FileName.tar.gz DirName
 --------------------------------------------- 
 .bz2
-½âÑ¹1£ºbzip2 -d FileName.bz2
-½âÑ¹2£ºbunzip2 FileName.bz2
-Ñ¹Ëõ£º bzip2 -z FileName
+Â½Ã¢Ã‘Â¹1Â£Âºbzip2 -d FileName.bz2
+Â½Ã¢Ã‘Â¹2Â£Âºbunzip2 FileName.bz2
+Ã‘Â¹Ã‹ÃµÂ£Âº bzip2 -z FileName
 .tar.bz2
-½âÑ¹£ºtar jxvf FileName.tar.bz2 
-Ñ¹Ëõ£ºtar jcvf FileName.tar.bz2 DirName
+Â½Ã¢Ã‘Â¹Â£Âºtar jxvf FileName.tar.bz2 
+Ã‘Â¹Ã‹ÃµÂ£Âºtar jcvf FileName.tar.bz2 DirName
 ---------------------------------------------
 .bz
-½âÑ¹1£ºbzip2 -d FileName.bz 
-½âÑ¹2£ºbunzip2 FileName.bz
-Ñ¹Ëõ£ºÎ´Öª
+Â½Ã¢Ã‘Â¹1Â£Âºbzip2 -d FileName.bz 
+Â½Ã¢Ã‘Â¹2Â£Âºbunzip2 FileName.bz
+Ã‘Â¹Ã‹ÃµÂ£ÂºÃÂ´Ã–Âª
 .tar.bz
-½âÑ¹£ºtar jxvf FileName.tar.bz
-Ñ¹Ëõ£ºÎ´Öª
+Â½Ã¢Ã‘Â¹Â£Âºtar jxvf FileName.tar.bz
+Ã‘Â¹Ã‹ÃµÂ£ÂºÃÂ´Ã–Âª
 ---------------------------------------------
 .Z
-½âÑ¹£ºuncompress FileName.Z
-Ñ¹Ëõ£ºcompress FileName
+Â½Ã¢Ã‘Â¹Â£Âºuncompress FileName.Z
+Ã‘Â¹Ã‹ÃµÂ£Âºcompress FileName
 .tar.Z
-½âÑ¹£ºtar Zxvf FileName.tar.Z
-Ñ¹Ëõ£ºtar Zcvf FileName.tar.Z DirName
+Â½Ã¢Ã‘Â¹Â£Âºtar Zxvf FileName.tar.Z
+Ã‘Â¹Ã‹ÃµÂ£Âºtar Zcvf FileName.tar.Z DirName
 ---------------------------------------------
 .tgz
-½âÑ¹£ºtar zxvf FileName.tgz
-Ñ¹Ëõ£ºÎ´Öª
+Â½Ã¢Ã‘Â¹Â£Âºtar zxvf FileName.tgz
+Ã‘Â¹Ã‹ÃµÂ£ÂºÃÂ´Ã–Âª
 .tar.tgz
-½âÑ¹£ºtar zxvf FileName.tar.tgz
-Ñ¹Ëõ£ºtar zcvf FileName.tar.tgz FileName
+Â½Ã¢Ã‘Â¹Â£Âºtar zxvf FileName.tar.tgz
+Ã‘Â¹Ã‹ÃµÂ£Âºtar zcvf FileName.tar.tgz FileName
 ---------------------------------------------
 .zip
-½âÑ¹£ºunzip FileName.zip
-Ñ¹Ëõ£ºzip FileName.zip DirName
+Â½Ã¢Ã‘Â¹Â£Âºunzip FileName.zip
+Ã‘Â¹Ã‹ÃµÂ£Âºzip FileName.zip DirName
 ---------------------------------------------
 .rar
-½âÑ¹£ºrar a FileName.rar
-Ñ¹Ëõ£ºrar e FileName.rar
+Â½Ã¢Ã‘Â¹Â£Âºrar a FileName.rar
+Ã‘Â¹Ã‹ÃµÂ£Âºrar e FileName.rar
 
-rarÇëµ½£ºhttp://www.rarsoft.com/download.htm ÏÂÔØ£¡
-½âÑ¹ºóÇë½«rar_static¿½±´µ½/usr/binÄ¿Â¼£¨ÆäËûÓÉ$PATH»·¾³±äÁ¿Ö¸¶¨µÄÄ¿Â¼Ò²¿ÉÒÔ£©£º
+rarÃ‡Ã«ÂµÂ½Â£Âºhttp://www.rarsoft.com/download.htm ÃÃ‚Ã”Ã˜Â£Â¡
+Â½Ã¢Ã‘Â¹ÂºÃ³Ã‡Ã«Â½Â«rar_staticÂ¿Â½Â±Â´ÂµÂ½/usr/binÃ„Â¿Ã‚Â¼Â£Â¨Ã†Ã¤Ã‹Ã»Ã“Ã‰$PATHÂ»Â·Â¾Â³Â±Ã¤ÃÂ¿Ã–Â¸Â¶Â¨ÂµÃ„Ã„Â¿Ã‚Â¼Ã’Â²Â¿Ã‰Ã’Ã”Â£Â©Â£Âº
 [root@www2 tmp]# cp rar_static /usr/bin/rar
 ---------------------------------------------
 .lha
-½âÑ¹£ºlha -e FileName.lha 
-Ñ¹Ëõ£ºlha -a FileName.lha FileName
+Â½Ã¢Ã‘Â¹Â£Âºlha -e FileName.lha 
+Ã‘Â¹Ã‹ÃµÂ£Âºlha -a FileName.lha FileName

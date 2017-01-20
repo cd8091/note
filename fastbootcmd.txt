@@ -1,0 +1,12 @@
+Device Lock related Commands for fastboot
+Get Device State
+"fastboot getvar secure":whether device is in locked state
+"fastboot getvar unlocked":whether device is in unlocked state
+"fastboot getvar warranty":whether device has been unlocked before
+
+Device Lock/Unlock
+"fastboot oem key":to input unlock key
+"fastboot oem unlock":to perform unlock operation
+"fastboot oem lock":to perform lock operation
+
+fastboot -w: format userdata partition
