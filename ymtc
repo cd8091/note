@@ -1,0 +1,55 @@
+SVN：https://pd1shsvn01.xmc.wh/svn/BU_For_CP_Test_Code
+Adam_Chen（Aa123456）
+
+
+printer:\\prwh03
+  After shutdown & reboot, the PC IP changed. 
+    10.217.31.129  ? 10.217.31.176  for Teradyne
+    10.217.31.131  ? 10.217.31.175  for YMTC
+
+
+
+Program is uploaded to folder: \\10.216.128.56\pde\pde\Personal_folder\TC1_GF
+
+IP	        10.216.128.56
+Account   	pde
+Password	xmcpde583
+
+
+SH Magnum Dummy server
+IP	        10.217.19.23
+Account   	PC user name
+Password	PC password
+
+
+The MAG2EV Tester IP and account information as below:
+IP address	10.217.20.13	10.217.20.14
+Account	Administrator
+Password	Ymtcsh1387
+
+The MAG5 Tester IP and account information as below:
+IP address	10.217.20.15    10.217.20.19
+Account	Administrator
+Password	Ymtcsh1387
+
+
+The MAG5 SSV Tester IP and account information as below:
+IP address	10.216.128.58
+Account	Administrator
+Password	P@$$word
+
+5830PS:
+机台ip:  10.216.55.95
+用户名：pde
+密码：  ymtcpde95
+
+WH Fix IP server
+IP	        10.216.109.45
+Account   	PC user name
+Password	PC password
+
+
+WH Magnum 2
+IP address	10.216.55.103
+Account	Administrator
+Password	P@$$word
